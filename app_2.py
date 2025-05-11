@@ -22,11 +22,11 @@ from annotated_text import annotated_text
 # Load API keys
 load_dotenv()
 os.environ['USER_AGENT'] = 'myagent'
+os.environ['GROQ_API_KEY'] = st.secrets['GROQ_API_KEY']
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
+
 
 def display_document_with_laws(doc, doc_laws, idx):
-    """
-    Display document content and list laws underneath without showing relevance.
-    """
     st.markdown(f"### Document {idx + 1}")
     st.markdown(f"[🔗 View Full Letter]({doc.metadata.get('source', 'Unknown')})")
     st.write(doc.page_content)
