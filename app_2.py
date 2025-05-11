@@ -1,13 +1,9 @@
 import os
-import time
-import re
 import streamlit as st
 import pandas as pd
-from dotenv import load_dotenv
 from typing import List
 import faiss
 from uuid import uuid4
-import re
 from pydantic import BaseModel, Field
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
@@ -17,10 +13,8 @@ from langchain_groq import ChatGroq
 from langchain_core.output_parsers import StrOutputParser, PydanticOutputParser
 from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain_community.vectorstores import FAISS
-from annotated_text import annotated_text
 
 # Load API keys
-load_dotenv()
 os.environ['USER_AGENT'] = 'myagent'
 os.environ['GROQ_API_KEY'] = st.secrets['GROQ_API_KEY']
 os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
