@@ -1,5 +1,5 @@
 beautifulsoup4==4.13.4
-faiss==1.5.3
+faiss-cp==1.11.0
 langchain==0.3.25
 langchain_cohere==0.4.4
 langchain_community==0.3.23
