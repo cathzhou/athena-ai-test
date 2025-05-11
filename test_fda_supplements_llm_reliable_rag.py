@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 # # %%
 # Install required packages
-!pip install langchain langchain-community python-dotenv
-!pip install langchain-cohere tiktoken chromadb
+#!pip install langchain langchain-community python-dotenv
+#!pip install langchain-cohere tiktoken chromadb
 # %%
-!pip install langchain-openai
+#!pip install langchain-openai
 # %%
 ### LLMs
 import os
